@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		3BC09EDF27E1CB5F00CACF8D /* YouTubeTapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC09EDE27E1CB5F00CACF8D /* YouTubeTapApp.swift */; };
-		3BC09EE127E1CB5F00CACF8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC09EE027E1CB5F00CACF8D /* ContentView.swift */; };
+		3BC09EE127E1CB5F00CACF8D /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC09EE027E1CB5F00CACF8D /* SearchResultsView.swift */; };
 		3BC09EE327E1CB5F00CACF8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC09EE227E1CB5F00CACF8D /* Assets.xcassets */; };
 		3BC09EE627E1CB5F00CACF8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC09EE527E1CB5F00CACF8D /* Preview Assets.xcassets */; };
+		3BC09EED27E1CCA900CACF8D /* iFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC09EEC27E1CCA900CACF8D /* iFrameView.swift */; };
+		3BC09EF127E1D4F100CACF8D /* SearchResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC09EF027E1D4F100CACF8D /* SearchResultsViewModel.swift */; };
+		3BC09EF327E1D74F00CACF8D /* IFrameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC09EF227E1D74F00CACF8D /* IFrameService.swift */; };
+		3BC09EF527E20F1500CACF8D /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC09EF427E20F1500CACF8D /* UIDevice.swift */; };
+		3BC09EFF27E21C3B00CACF8D /* SizeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC09EFE27E21C3B00CACF8D /* SizeFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3BC09EDB27E1CB5F00CACF8D /* YouTubeTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC09EDE27E1CB5F00CACF8D /* YouTubeTapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeTapApp.swift; sourceTree = "<group>"; };
-		3BC09EE027E1CB5F00CACF8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3BC09EE027E1CB5F00CACF8D /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
 		3BC09EE227E1CB5F00CACF8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BC09EE527E1CB5F00CACF8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BC09EEC27E1CCA900CACF8D /* iFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iFrameView.swift; sourceTree = "<group>"; };
+		3BC09EF027E1D4F100CACF8D /* SearchResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewModel.swift; sourceTree = "<group>"; };
+		3BC09EF227E1D74F00CACF8D /* IFrameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFrameService.swift; sourceTree = "<group>"; };
+		3BC09EF427E20F1500CACF8D /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		3BC09EFE27E21C3B00CACF8D /* SizeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +61,12 @@
 		3BC09EDD27E1CB5F00CACF8D /* YouTubeTap */ = {
 			isa = PBXGroup;
 			children = (
-				3BC09EDE27E1CB5F00CACF8D /* YouTubeTapApp.swift */,
-				3BC09EE027E1CB5F00CACF8D /* ContentView.swift */,
-				3BC09EE227E1CB5F00CACF8D /* Assets.xcassets */,
+				3BC09EF827E2190E00CACF8D /* SupportingFiles */,
+				3BC09EF927E21A5600CACF8D /* UI */,
+				3BC09EFA27E21A9500CACF8D /* ViewModels */,
+				3BC09EFC27E21B3A00CACF8D /* Models */,
+				3BC09EFD27E21B5C00CACF8D /* Extensions */,
+				3BC09EFB27E21AB300CACF8D /* Resources */,
 				3BC09EE427E1CB5F00CACF8D /* Preview Content */,
 			);
 			path = YouTubeTap;
@@ -65,6 +78,56 @@
 				3BC09EE527E1CB5F00CACF8D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3BC09EF827E2190E00CACF8D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3BC09EDE27E1CB5F00CACF8D /* YouTubeTapApp.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		3BC09EF927E21A5600CACF8D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3BC09EEC27E1CCA900CACF8D /* iFrameView.swift */,
+				3BC09EE027E1CB5F00CACF8D /* SearchResultsView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3BC09EFA27E21A9500CACF8D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3BC09EF027E1D4F100CACF8D /* SearchResultsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3BC09EFB27E21AB300CACF8D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3BC09EE227E1CB5F00CACF8D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3BC09EFC27E21B3A00CACF8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BC09EF227E1D74F00CACF8D /* IFrameService.swift */,
+				3BC09EFE27E21C3B00CACF8D /* SizeFormatter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3BC09EFD27E21B5C00CACF8D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3BC09EF427E20F1500CACF8D /* UIDevice.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BC09EE127E1CB5F00CACF8D /* ContentView.swift in Sources */,
+				3BC09EF327E1D74F00CACF8D /* IFrameService.swift in Sources */,
+				3BC09EFF27E21C3B00CACF8D /* SizeFormatter.swift in Sources */,
+				3BC09EE127E1CB5F00CACF8D /* SearchResultsView.swift in Sources */,
+				3BC09EED27E1CCA900CACF8D /* iFrameView.swift in Sources */,
 				3BC09EDF27E1CB5F00CACF8D /* YouTubeTapApp.swift in Sources */,
+				3BC09EF127E1D4F100CACF8D /* SearchResultsViewModel.swift in Sources */,
+				3BC09EF527E20F1500CACF8D /* UIDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +343,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -286,7 +355,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,8 +373,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +385,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

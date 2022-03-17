@@ -11,7 +11,7 @@ import SwiftUI
 struct YouTubeTapApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SearchResultsView()
         }
     }
 }
